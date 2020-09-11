@@ -1,0 +1,184 @@
+html, body { 
+    margin: 0;
+}
+
+h1, h2, h3, h4, li, p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* --------  Cabeçalho --------*/
+
+header {
+    background-color: #3C913A;
+    color: black;
+    height: 79px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 6%; 
+    position: absolute;
+    margin-left: 3%;
+}
+
+#menu {
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 3%;
+    margin-right: 5%;
+    text-decoration: initial;
+    list-style: none;
+}
+
+a {
+    color: black;
+    font-size: 17px;
+}
+
+li {
+    float: left;
+    padding: 28px 30px;
+    height: 29%;
+} 
+
+li:hover {
+    background-color: #DE6FA9;
+}
+
+/* --------  Capa  --------*/
+
+#imagem_fundo {
+    background: url(img/fundo.jpg);
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+}
+
+#titulo {
+    color: black;
+    padding-top: 6%;
+    font-size: 60px;
+    line-height: 1;
+}
+
+#subtitulo {
+    color: black;
+    padding-top: 27%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 45px;
+}
+
+/* --------  Seções  --------*/
+
+.section {
+    padding: 20px;
+    float: left;
+}
+
+.destaque, footer {
+    background-color: #70DE6E;
+}
+
+/* --------  Colunas  --------*/
+
+.coluna { 
+    float: left;
+    position: relative;
+}
+
+.dois {
+    width: 50%;
+}
+
+.tres {
+    width: 29%;
+    padding: 0 2%;
+}
+
+.cinco {
+    width: 18%;
+    padding: 13px;
+}
+
+/* -------- Ícones da página "Recicle"  --------*/
+
+.icone {
+    padding-top: 20%;
+    width: 50%;
+    border-radius: 40px;
+}
+
+.icone:hover {
+    background-color: #9BFF99;
+}
+
+/* -------- Configurações nas letras --------*/
+
+.centralizado {
+    text-align: center;
+}  
+
+.mud {   
+    font-size: 18px
+}
+
+/* --------  Ajustre da foto na seção "Ações"  --------*/
+
+#foto {
+    padding-top: 25px;
+}
+
+/* --------  Rodapé -------*/
+
+
+footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    margin-top: 0px;
+}
+  
+/* --------  Responsividade  --------*/
+
+@media all and (max-width: 768px) {
+    .coluna, .coluna.cinco, .coluna.quatro, .coluna.tres, .coluna.dois {
+      display: block;
+      width: 80%;
+      padding: 0;
+      margin: 10px auto;
+      float: none;
+    }
+
+    .menu, li {
+      visibility: hidden;
+    }
+
+    #logo {
+        position: relative;
+        width: 13%;
+        margin-top: -1%;
+        margin-left: 150px;
+        
+    }
+
+   h1{
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        height: 48px;
+        margin-top: 3.6em;
+        margin-bottom: 3.6em;
+     }
+     .logo {
+        width: 100%;
+        float: left;
+     }
+     .menu {
+        width: 100%;
+        float: right;
+     }
+    }    
