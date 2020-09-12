@@ -9,30 +9,31 @@ h1, h2, h3, h4, li, p {
 /* --------  Cabeçalho --------*/
 
 header {
-    background-color: #3C913A;
+    background-color: #103810;
     color: black;
-    height: 79px;
+    height: 65px;
     width: 100%;
     position: fixed;
     z-index: 10;
 }
+
 #logo {
-    width: 6%; 
+    width: 5%; 
     position: absolute;
     margin-left: 3%;
 }
 
 #menu {
     float: right;
-    margin-top: 0px;
-    margin-bottom: 3%;
+    margin-top: -10px;
+    margin-bottom: 5%;
     margin-right: 5%;
     text-decoration: initial;
     list-style: none;
 }
 
 a {
-    color: black;
+    color: white;
     font-size: 17px;
 }
 
@@ -43,20 +44,19 @@ li {
 } 
 
 li:hover {
-    background-color: #DE6FA9;
+    background-color: #1C1638;
 }
 
 /* --------  Capa  --------*/
 
 #imagem_fundo {
-    background: url(img/fundo.jpg);
-    height: 100%;
-    text-align: center;
-    background-size: cover;
+    height: 100% auto ;
+    margin-top: -2%;
 }
 
 #titulo {
     color: black;
+    text-align: center;
     padding-top: 6%;
     font-size: 60px;
     line-height: 1;
@@ -64,10 +64,12 @@ li:hover {
 
 #subtitulo {
     color: black;
-    padding-top: 27%;
+    text-align: center;
+    margin-top: -1px;
+    margin-bottom: 3%;
     padding-left: 10%;
     padding-right: 10%;
-    font-size: 45px;
+    font-size: 37px;
 }
 
 /* --------  Seções  --------*/
@@ -78,7 +80,7 @@ li:hover {
 }
 
 .destaque, footer {
-    background-color: #70DE6E;
+    background-color:#b6f0b6;
 }
 
 /* --------  Colunas  --------*/
@@ -111,7 +113,7 @@ li:hover {
 }
 
 .icone:hover {
-    background-color: #9BFF99;
+    background-color: #D4CEF0;
 }
 
 /* -------- Configurações nas letras --------*/
@@ -124,6 +126,11 @@ li:hover {
     font-size: 18px
 }
 
+.black {
+    color: black;
+    font-size: 18px;
+}
+
 /* --------  Ajustre da foto na seção "Ações"  --------*/
 
 #foto {
@@ -131,7 +138,6 @@ li:hover {
 }
 
 /* --------  Rodapé -------*/
-
 
 footer {
     margin-left: -20px;
@@ -143,7 +149,7 @@ footer {
 /* --------  Responsividade  --------*/
 
 @media all and (max-width: 768px) {
-    .coluna, .coluna.cinco, .coluna.quatro, .coluna.tres, .coluna.dois {
+    .coluna, .cinco, #subtitulo, .tres, .dois {
       display: block;
       width: 80%;
       padding: 0;
@@ -151,34 +157,48 @@ footer {
       float: none;
     }
 
+    #subtitulo {
+        margin-top: 300px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 50%;
+        margin-left: 0%;
+    }
+
     .menu, li {
       visibility: hidden;
     }
 
-    #logo {
+   #titulo {
+        width: 100%;
+        padding-top: 80px;
         position: relative;
-        width: 13%;
-        margin-top: -1%;
-        margin-left: 150px;
-        
     }
 
-   h1{
-        width: 100%;
+    #subtitulo {
+        margin-top: -10px;
+    }
+    
+   #logodiv {
+        width: auto;
+        height: auto;
+        position: relative;
+        text-align: center;
+        padding: 0px;
+        margin-top: 15px;
     }
 
-    .header {
-        width: 100%;
-        height: 48px;
-        margin-top: 3.6em;
-        margin-bottom: 3.6em;
-     }
-     .logo {
-        width: 100%;
-        float: left;
-     }
-     .menu {
-        width: 100%;
-        float: right;
-     }
-    }    
+    #logo {
+        margin-left: 0px;
+        transform: translateX(-100%);
+    } 
+
+    #imagem_fundo {
+        max-width: 100%;
+        width: auto;
+        text-align: center;
+    }
+    
+}    
