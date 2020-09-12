@@ -183,16 +183,15 @@ footer {
     }
     
    #logodiv {
-        width: auto;
-        height: auto;
         position: relative;
         text-align: center;
         padding: 0px;
-        margin-top: 15px;
+        margin-top: 3px;
     }
 
     #logo {
-        margin-left: 0px;
+        width: 11%;
+        margin-left: 8px;
         transform: translateX(-100%);
     } 
 
