@@ -140,15 +140,16 @@ li:hover {
 /* --------  Rodapé -------*/
 
 footer {
-    margin-left: -20px;
-    margin-right: -20px;
+    width: 100%;
+    margin-left: -40px;
+    margin-right: 0px;
     margin-bottom: -20px;
     margin-top: 0px;
 }
   
 /* --------  Responsividade  --------*/
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1250px) {
     .coluna, .cinco, #subtitulo, .tres, .dois {
       display: block;
       width: 80%;
@@ -163,7 +164,7 @@ footer {
 
     iframe {
         width: 100%;
-        height: 30%;
+        height: 40%;
         margin-left: 0%;
     }
 
@@ -182,23 +183,21 @@ footer {
         margin-top: -5px;
     }
     
-   #logodiv {
-        position: relative;
-        text-align: center;
-        padding: 0px;
-        margin-top: 3px;
-    }
-
-    #logo {
-        width: 11%;
-        margin-left: 8px;
-        transform: translateX(-100%);
-    } 
 
     #imagem_fundo {
         max-width: 100%;
         width: auto;
         text-align: center;
     }
-    
+    #logodiv {
+        width: 110%;
+        position: relative;
+        text-align: center;
+        padding: 0px;
+    }
+    #logo {
+        margin-top: 4px;
+        margin-left: -30px;
+        transform: translateX(-50%);
+    }
 }    
