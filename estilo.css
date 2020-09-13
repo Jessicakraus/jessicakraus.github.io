@@ -141,12 +141,15 @@ li:hover {
 
 footer {
     width: 100%;
+    padding-left: 60%;
     margin-left: -40px;
-    margin-right: 0px;
+    margin-right: 10px;
     margin-bottom: -20px;
     margin-top: 0px;
+    background-size: cover ;
+    
 }
-  
+
 /* --------  Responsividade  --------*/
 
 @media all and (max-width: 1250px) {
@@ -183,21 +186,15 @@ footer {
         margin-top: -5px;
     }
     
-
     #imagem_fundo {
         max-width: 100%;
         width: auto;
         text-align: center;
     }
-    #logodiv {
-        width: 110%;
-        position: relative;
-        text-align: center;
-        padding: 0px;
-    }
+
     #logo {
-        margin-top: 4px;
-        margin-left: -30px;
-        transform: translateX(-50%);
+        width: 6%;
+        position: center;
+        transform: translateX(-10%);
     }
-}    
+}
